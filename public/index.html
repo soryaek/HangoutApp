@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Hangout App</title>
+        <!-- Socket.io -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.0.4/socket.io.js"></script>
+        <link href="/styles.css" rel="stylesheet" />
+
+    </head>
+    <body>
+      <div id="hangout-app">
+            <h2>Let's connect!</h2>
+            <div id="hangout-window">
+                <div id="active-user"></div>
+                <div id="output"></div>
+                <div id="feedback"></div>
+            </div>
+            <input id="user" type="text" placeholder="Name" required/>
+            <input id="message" type="text" placeholder="Message" />
+            <button id="send">Send</button>
+        </div>
+    </body>
+    <script src="/chat.js"></script>
+</html>
